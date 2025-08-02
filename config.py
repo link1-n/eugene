@@ -6,6 +6,7 @@ class Config(BaseSettings):
     date_of_birth: date
     hdfc_cc_file: str
     yes_bank_cc_file: str
+    category_folder_path: str
     name: str
 
     model_config = SettingsConfigDict(

@@ -1,0 +1,22 @@
+[tool.ruff]
+line-length = 80
+
+[tool.ruff.lint]
+#select = ["ALL"]
+select = [
+  "E",   # pycodestyle (style issues)
+  "F",   # pyflakes (common bugs)
+  "I",   # isort (import sorting)
+  "N",   # pep8-naming (naming conventions)
+  "UP",  # pyupgrade (modern syntax)
+  "B",   # bugbear (potential bugs)
+  "C4",  # flake8-comprehensions
+  "SIM", # flake8-simplify
+]
+fixable = ["ALL"]
+
+
+[tool.ruff.format]
+quote-style = "preserve"
+indent-style = "space"
+line-ending = "lf"
